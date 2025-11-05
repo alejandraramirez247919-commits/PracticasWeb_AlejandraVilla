@@ -1,0 +1,31 @@
+/*documento css*/
+
+*{ margin: 0px;
+    padding: 0px; }
+
+.card { background-color: rgb(90, 77, 155);
+padding: 80px 0%;
+
+} 
+
+.container {background-color: rgb(159, 233, 233);
+padding: 16px 8px;
+width: 90%;
+min-height: 1px;
+margin: auto;
+display: flex;
+flex-flow: row wrap;
+
+} 
+.items { background-color: rgb(176, 91, 165);
+    width: 120%;
+    height: 100px;
+    text-align: center;
+}
+    
+.items img { background-color: aliceblue;
+width: 33.33%;
+min-height: 100px;
+text-align: center;
+
+}

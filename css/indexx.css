@@ -1,0 +1,137 @@
+/* Estilos Globales y Reset Básico */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f6;
+    color: #333;
+}
+
+/* ---------------------------------- */
+/* Header (Cabecera) */
+/* ---------------------------------- */
+header {
+    background-color: #fcc39a; /* Azul oscuro */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5em;
+}
+
+/* ---------------------------------- */
+/* Main (Contenido Principal) */
+/* ---------------------------------- */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.unidad {
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.unidad h2 {
+    color: #dfa87b; /* Azul claro */
+    border-bottom: 3px solid #f0ad79;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Uso de Flexbox para el listado de prácticas */
+.practicas-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 25px; /* Espacio entre las tarjetas */
+    justify-content: flex-start; /* Alinea al inicio */
+}
+
+.practica {
+    /* Define el tamaño flexible de las tarjetas */
+    /* 1 1: Puede crecer y encoger. calc(33.33% - 25px): Tres tarjetas por fila en ancho total */
+    flex: 1 1 calc(33.33% - 25px); 
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px; /* Ancho mínimo para la responsividad */
+}
+
+.practica:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.practica h3 {
+    color: #e47438; /* Rojo para los nombres de archivo */
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 8px;
+}
+
+.practica p {
+    font-size: 0.9em;
+    color: #6c757d;
+    min-height: 40px; /* Altura mínima para mantener consistencia */
+}
+
+.practica a {
+    display: block; /* Ocupa todo el ancho del artículo */
+    background-color: #cc872e; /* Verde */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.practica a:hover {
+    background-color: #e2ae6e;
+}
+
+/* Estilo especial para la Evaluación */
+.practica.especial {
+    border: 2px solid #e7ae3c;
+    background-color: #fceae9;
+}
+
+
+
+@media (max-width: 900px) {
+    .practica {
+        
+        flex: 1 1 calc(50% - 25px); 
+    }
+}
+
+/* Móviles (Una tarjeta por fila) */
+@media (max-width: 580px) {
+    .practica {
+      
+        flex: 1 1 100%; 
+    }
+}
+
+/* ---------------------------------- */
+/* Footer */
+/* ---------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #dbac7a;
+    color: #ecf0f1;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

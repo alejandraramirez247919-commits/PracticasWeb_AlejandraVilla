@@ -1,0 +1,111 @@
+/*  CSS Selectores: Selector Universal (*) */
+* {
+    /*  CSS Estilización Básica: Resetear estilos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  CSS Selectores: Selectores de Etiqueta (body) */
+body {
+    /* Aplicando las fuentes enlazadas */
+    font-family: 'Open Sans', sans-serif; 
+    /*  CSS Estilización Básica: background-color */
+    background-color: #f4f4f9; 
+    /*  CSS Estilización Básica: color */
+    color: #333;
+    line-height: 1.6;
+}
+
+/*  CSS Selectores: Selectores de Etiqueta (header, footer) */
+header, footer {
+    background-color: #716adb; /* Azul vibrante */
+    color: white;
+    /*  CSS Estilización Básica: padding */
+    padding: 20px 0;
+    /*  CSS Estilización Básica: text-align */
+    text-align: center;
+}
+
+/* CSS Selectores: Selectores de Etiqueta (h1) */
+h1 {
+    font-family: 'Roboto Slab', serif; /* Fuente serif para el título */
+    /*  CSS Estilización Básica: margin */
+    margin-bottom: 5px;
+}
+
+/*  CSS Selectores: Selectores de Etiqueta (main) */
+main {
+    max-width: 1000px;
+    /*  CSS Estilización Básica: margin (centrar main) */
+    margin: 20px auto; 
+    padding: 0 20px;
+}
+
+/*  CSS Selectores: Selectores de Etiqueta (section) */
+section {
+    /*  CSS Estilización Básica: margin */
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Selectores: Selectores de Clase (1/2): .seccion-primaria */
+.seccion-primaria {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/*  CSS Selectores: Selectores de Clase (2/2): .seccion-secundaria */
+.seccion-secundaria {
+    background-color: #e9ecef; /* Fondo gris claro */
+    border-left: 5px solid #007bff; /* Borde de color */
+}
+
+/* Estilos para el texto */
+/* CSS Selectores: Selectores de Etiqueta (p) */
+p {
+    margin-bottom: 15px;
+}
+
+/*  Selectores de Clase: .cita-rand (aplicado al párrafo con la cita) */
+.cita-rand {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #cc0000; /* Color distintivo para la cita (rojo) */
+    /*  CSS Estilización Básica: padding */
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px dashed #cc0000;
+}
+
+/*  Selectores de Etiqueta: img */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para que las imágenes no tengan espacio extra debajo */
+    /* Selectores de Clase: .imagen-diseñador (ejemplo de clase para imágenes) */
+    /* Se podría usar una clase para darle un estilo de borde o sombra específico a las imágenes principales */
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+/* Selectores de Etiqueta: a (enlaces) */
+a {
+    color: white; /* Color blanco para los enlaces en el footer */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS Selectores: Selectores de Etiqueta (ul, li) */
+ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}

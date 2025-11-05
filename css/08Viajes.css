@@ -1,0 +1,76 @@
+/*DOCUMENTO CSS AJUSTADO*/
+
+*{margin: 0px; 
+    padding: 0px; }
+
+    
+body{font-family: 'Open Sans', sans-serif; 
+    background-color: #f4f4f9; 
+    color: #0b5872;
+    line-height: 1.6;}
+
+
+
+header, footer {  background-color: #6ac6db; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;}
+
+
+h1 {
+    font-family: 'MIS VIAJES', serif; 
+    margin-bottom: 10px;}
+
+
+main {
+    max-width: 1000px;
+    margin: 20px auto; 
+    padding: 0 20px;
+} 
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(12, 12, 12, 0.1);
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+}
+
+
+
+section img {
+    
+    width: 100%;       
+    max-width: 500px; 
+    height: 300px;     
+    
+    
+    object-fit: cover; 
+    
+   
+    margin-top: 15px;      
+    margin-bottom: 25px;   
+    border-radius: 6px;    
+}
+
+footer h5 {
+    margin-top: 10px;
+}
+footer hr {
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto 0;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+

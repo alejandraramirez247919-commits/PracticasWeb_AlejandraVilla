@@ -1,0 +1,258 @@
+/* Estilos Generales y Reset Básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.cv-header, .cv-main, .cv-footer, .cv-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---------------------------------- */
+/* Header y Perfil (Flexbox) */
+/* ---------------------------------- */
+.cv-header {
+    background-color: #f6d6ae;
+    color: white;
+    padding: 40px 20px;
+    display: flex; /* Uso de Flexbox */
+    align-items: center;
+    gap: 30px;
+}
+
+.perfil-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.perfil-info h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5em;
+}
+
+.perfil-info h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.contacto-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto-info i, .social-links i {
+    margin-right: 8px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #adb5bd; /* Tono de gris al pasar el mouse */
+}
+
+/* ---------------------------------- */
+/* Main y Secciones */
+/* ---------------------------------- */
+.cv-main {
+    padding: 20px 20px 40px 20px;
+    display: flex; /* Uso de Flexbox para el layout principal */
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cv-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #efc895;
+    border-bottom: 2px solid #e4b48c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.section-title i {
+    margin-right: 10px;
+}
+
+.item-block {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #ced4da;
+}
+
+.item-block h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.institucion, .fechas {
+    font-style: italic;
+    color: #6c757d;
+    margin: 0 0 5px 0;
+}
+
+/* Skills (Flexbox) */
+.skills-container {
+    display: flex; /* Uso de Flexbox */
+    gap: 20px;
+}
+
+.hard-skills, .soft-skills {
+    flex: 1; /* Distribuye el espacio equitativamente */
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.skills-container li::before {
+    content: "•";
+    color: #eaa26e;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ---------------------------------- */
+/* Formulario (Control de Formulario) */
+/* ---------------------------------- */
+.job-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Limita el ancho del formulario */
+}
+
+.job-contact-form label {
+    font-weight: bold;
+}
+
+.job-contact-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background-color: #dc7412;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #d5a457;
+}
+
+/* ---------------------------------- */
+/* Footer */
+/* ---------------------------------- */
+.cv-footer {
+    text-align: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* ---------------------------------- */
+/* Media Queries (Responsividad) */
+/* ---------------------------------- */
+
+/* Breakpoint 1: 600px o más */
+@media (min-width: 600px) {
+    /* Ajustes para encabezado en pantallas medianas */
+    .cv-header {
+        align-items: flex-start; /* Alinea al inicio verticalmente */
+    }
+
+    .perfil-info {
+        flex-grow: 1;
+    }
+
+    /* Skills: Mantiene el Flexbox pero mejora el espaciado si es necesario */
+    .skills-container {
+        flex-direction: row; /* Asegura que estén lado a lado */
+    }
+}
+
+/* Breakpoint 2: 992px o más */
+@media (min-width: 992px) {
+    .cv-main {
+        display: grid; /* Usa Grid para un layout más avanzado en pantallas grandes */
+        grid-template-columns: 2fr 1fr; /* Columna principal más ancha y columna secundaria */
+        grid-template-areas:
+            "abstract abstract"
+            "experience education"
+            "skills skills"
+            "contact contact";
+        gap: 30px;
+    }
+
+    .abstract { grid-area: abstract; }
+    .experience { grid-area: experience; }
+    .education { grid-area: education; }
+    .skills { grid-area: skills; }
+    .contact-form { grid-area: contact; }
+
+    /* Ajuste de habilidades para 992px (sigue usando flexbox internamente) */
+    .skills-container {
+        gap: 50px;
+    }
+}
+
+
+/* Estilos para pantallas pequeñas (menos de 600px) - Por defecto */
+@media (max-width: 599px) {
+    .cv-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-foto {
+        margin-bottom: 15px;
+    }
+
+    .contacto-info span {
+        display: inline;
+        margin-right: 15px;
+    }
+    
+    .skills-container {
+        flex-direction: column; /* Apila las habilidades */
+    }
+}

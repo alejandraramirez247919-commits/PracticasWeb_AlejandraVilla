@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japón Hoy: Política, Ciencia y Economía en el Archipiélago - Periódico Ejemplo</title>
+    <>
+        /* Estilos básicos para simular un periódico, puedes ampliarlos en un archivo CSS externo */
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+.portada-dos-colores {
+   
+    height: 100vh; 
+     background: linear-gradient(
+        to bottom,
+        #e3f2fd,
+         #bbdefb   
+    );
+    
+    /* Opcional: Fallback si el navegador no soporta degradados */
+    background-color: #bbdefb; 
+}
+        }
+        .header-principal h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .header-principal p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        article h2 {
+            font-size: 1.8em;
+            color: #000080; /* Azul oscuro para titulares */
+        }
+        .noticia-meta {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            border-left: 3px solid #A50000;
+            padding-left: 10px;
+        }
+        .seccion-adicional {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        .seccion-adicional h3 {
+            color: #6d0f7d;
+        }
+        .footer-diario {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: white;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        .footer-diario a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Junior H</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .junior-h-photo {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #e8cf13;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            color: #555;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                text-align: right;
+            }
+
+            th::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biografía de Junior H</h1>
+        <img src="../img/jh.jpeg" alt="Foto de Junior H" class="junior-h-photo">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Nombre Completo">Nombre Completo</td>
+                    <td>Antonio Herrera Pérez</td>
+                </tr>
+                <tr>
+                    <td data-label="Fecha de Nacimiento">Fecha de Nacimiento</td>
+                    <td>23 de abril de 2001</td>
+                </tr>
+                <tr>
+                    <td data-label="Lugar de Nacimiento">Lugar de Nacimiento</td>
+                    <td>Guanajuato, México</td>
+                </tr>
+                <tr>
+                    <td data-label="Géneros Musicales">Géneros Musicales</td>
+                    <td>Corridos Tumbados, Sierreño</td>
+                </tr>
+                <tr>
+                    <td data-label="Ocupación">Ocupación</td>
+                    <td>Cantante, compositor</td>
+                </tr>
+                <tr>
+                    <td data-label="Álbumes Destacados">Álbumes Destacados</td>
+                    <td> Mi Vida en un Cigarro, $ad Boyz 4 Life</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="description">
+            Antonio Herrera Pérez, conocido artísticamente como Junior H, es una de las figuras más prominentes del movimiento de los Corridos Tumbados. Originario de Guanajuato, México, Junior H ganó popularidad al fusionar los sonidos tradicionales del corrido con elementos modernos como el trap y el hip-hop. 
+            Su estilo melancólico y sus letras que abordan temas de desamor, soledad y la vida en la calle, lo han conectado profundamente con una nueva generación de oyentes. Su éxito se consolidó tras firmar con el sello discográfico Rancho Humilde, lanzando álbumes que lo catapultaron a la fama internacional, estableciéndose como un ícono del género.
+        </p>
+    </div>
+
+</body>
+</html>

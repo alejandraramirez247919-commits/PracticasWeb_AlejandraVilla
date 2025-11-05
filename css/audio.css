@@ -1,0 +1,22 @@
+/*DOCUMENTO CSS*/
+*{ padding: 0;
+margin: 0;}
+
+body { background-color: burlywood;}
+
+h1 {text-align: center;
+padding: 16px 0px;
+text-transform: uppercase;
+text-decoration: underline;
+font-size: 3em;
+line-height: 140%;
+color: beige;
+text-shadow: 2px 2px 4px rgb(143, 141, 104);
+}
+
+.audio { min-height: 80px;
+background-color: rgb(236, 175, 109);
+text-align: center;
+padding: 40px 0px;} 
+
+#video { background-color: rgb(224, 190, 154);}
